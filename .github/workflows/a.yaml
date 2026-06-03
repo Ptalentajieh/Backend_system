@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI Pipeline534
 
 on:
   # Trigger this workflow when code is pushed to main
@@ -15,13 +15,7 @@ jobs:
     steps:
       - name: Checkout repository
         # Fetch the repository contents so later steps can access source files
-        uses: actions/checkout@v5
-
-      - name: Set up Node.js
-        # Use Node.js version 16.x for this workflow files
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         # Install Node.js dependencies from package.json
